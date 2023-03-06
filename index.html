@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Zhanghan Wang</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/fontAwesome.css">
+  <link rel="stylesheet" href="css/light-box.css">
+  <link rel="stylesheet" href="css/owl-carousel.css">
+  <link rel="stylesheet" href="css/templatemo-style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Lato:wght@700&family=Merriweather:wght@700&family=PT+Serif:ital,wght@1,700&family=Playfair+Display:wght@400;600&family=Ubuntu:wght@700&family=Vollkorn:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+  <header class="nav-down responsive-nav hidden-lg hidden-md">
+    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <!--/.navbar-header-->
+    <div id="main-nav" class="collapse navbar-collapse">
+      <nav>
+        <ul class="nav navbar-nav">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#research">Research Entries</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#miscellaneous">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar-navigation hidde-sm hidden-xs">
+    <div class="logo">
+      <img src="img/photo.jpg">
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#aboutme">
+            <span class="rect"></span>
+            <span class="circle"></span>
+            About Me
+          </a>
+        </li>
+        <li>
+          <a href="#research">
+            <span class="rect"></span>
+            <span class="circle"></span>
+            Research Entires
+          </a>
+        </li>
+        <li>
+          <a href="#education">
+            <span class="rect"></span>
+            <span class="circle"></span>
+            Education
+          </a>
+        </li>
+        <li>
+          <a href="#miscellaneous">
+            <span class="rect"></span>
+            <span class="circle"></span>
+            Miscellaneous
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="social-icons">
+      <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
+      <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+      <!-- <li><a href="#"><i class="fa fa-google"></i></a></li> -->
+      <!-- <li><a href="https://github.com/RabbitWhite1" target="_blank"><i class="fa fa-github"></i></a></li> -->
+      <!-- <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+    </ul>
+  </div>
+
+
+  <div class="page-content">
+    <section id="aboutme" class="content-section">
+      <div class="section-heading">
+        <h1>Zhanghan Wang</h1>
+      </div>
+      <div class="section-content">
+        <p>
+          I am Zhanghan Wang, a PhD student at NYU now.
+          And I am widely interested in works about building <em>high-performance and reliable systems</em>. <br>
+          More specifically, I am now working on safety of distributed system advised by 
+          Prof. <a href="https://cs.nyu.edu/~apanda/" target="_blank">Aurojit Panda</a>.
+        </p>
+        <p>
+          <a href="https://github.com/RabbitWhite1"><i class="fa fa-github"></i> GitHub</a>&emsp;&emsp;&emsp;&emsp;
+          <a href="mailto:hankzhwang@gmail.com"><i class="fa fa-envelope"></i> hankzhwang AT
+            gmail.com</a>&emsp;&emsp;&emsp;&emsp;
+        </p>
+      </div>
+    </section>
+    <!-- Research Experience -->
+    <section id="research" class="content-section">
+      <div class="section-heading">
+        <h1>Research<br><em>Experience</em></h1>
+        <p>Below are my research experience and coursework projects.
+        </p>
+      </div>
+      <div class="section-content">
+        <div class="tabs-content">
+          <div class="wrapper">
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+              <li><a href="#tab_research" class="active">Research</a></li>
+              <li><a href="#tab_project">Projects</a></li>
+            </ul>
+            <section id="first-tab-group" class="tabgroup">
+              <div id="tab_research">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <img src="img/research/concolic.jpg" alt="">
+                      <div class="text-content">
+                        <h4>OpenJDK-based Concolic Execution Engine</h4>
+                        <span>July 2021 - Jan 2022</span>
+                        <p>We directly modified OpenJDK source codes to make this concolic execution engine applicable
+                          to all valid Java programs.</p>
+                        <div class="accent-button button">
+                          <a target="_blank">Stay Tuned</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="tab_project">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <img src="img/project/left_deep_join_tree.jpg" alt="">
+                      <div class="text-content">
+                        <h4>SQL Query Plan Optimization</h4>
+                        <span>Oct 2020 - Dec 2020</span>
+                        <p>In this project, we develop a greedy algorithm to reorder <em>left-deep-join tree</em> in SQL
+                          query plan, and achieved better performance.</p>
+                        <div class="accent-button button">
+                          <a href="https://zsb.ustc.edu.cn/2021/0323/c12990a477204/pagem.htm" target="_blank">News</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <img src="img/project/gdbfs.png" alt="">
+                      <div class="text-content">
+                        <h4>Graph DataBase File System</h4>
+                        <span>March 2019 - July 2019</span>
+                        <p>We utilize <em>Neo4j</em>(one of the best graph database) to build a <em>FUSE</em>-based file
+                          system with a fantastic web UI.</p>
+                        <div class="accent-button">
+                          <a href="https://github.com/USTC-CS-Course-Resource/GDBFS/blob/bdb3fa436be9e80d13554c340c1680f3dac2b2ee/report/%E7%BB%93%E9%A2%98%E6%8A%A5%E5%91%8A.md"
+                            target="_blank" class="button">Report</a>
+                          <a href="https://github.com/USTC-CS-Course-Resource/GDBFS/tree/bdb3fa436be9e80d13554c340c1680f3dac2b2ee"
+                            target="_blank" class="button">Code</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Experience -->
+    <section id="education" class="content-section">
+      <div class="section-heading">
+        <h1>Education<br><em>Experience</em></h1>
+        <p>Below are my Education Experience</p>
+      </div>
+      <div class="section-content">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image">
+              <img src="img/badge/nyu.png" alt="">
+            </div>
+            <div class="text-content">
+              <h4>New York University</h4>
+              <span>2022.09 - Present</span>
+              <p>
+                I am now an first-year PhD student at NYU, researching on safety of distributed systems, advised by 
+                Prof. <a href="https://cs.nyu.edu/~apanda/" target="_blank">Aurojit Panda</a>.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="img/badge/ustc.png" alt="">
+              <!-- <div class="education-button button">
+                <a href="#projects">Continue Reading</a>
+              </div> -->
+            </div>
+            <div class="text-content">
+              <h4>University of Science and Technology of China</h4>
+              <span>2018.09 - 2022.06</span>
+              <p>
+                USTC is where I started my Computer Science Study Science in June 2022. 
+                And I met 
+                Prof. <a href="http://staff.ustc.edu.cn/~chengli7/" target="_blank">Cheng Li</a> 
+                here, who offers me lots of help in digging into system works.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <img src="img/badge/sjtu.png" alt="">
+              <div class="education-button button">
+                <!-- <a href="#projects">Continue Reading</a> -->
+              </div>
+            </div>
+            <div class="text-content">
+              <h4>Shanghai Jiao Tong University</h4>
+              <span>2021.07-2022.01</span>
+              <p>
+                I went to SJTU for research about concolic execution, advised by 
+                Prof. <a href="https://ipads.se.sjtu.edu.cn/pub/members/zhaoguo_wang" target="_blank">Zhaoguo Wang</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact & Map -->
+    <!-- How to change your own map point
+               1. Go to Google Maps
+               2. Click on your location point
+               3. Click "Share" and choose "Embed map" tab
+               4. Copy only URL and paste it within the src="" field below -->
+    <!-- <section id="contact" class="content-section">
+      <div class="section-heading">
+        <h1>Location</em></h1>
+      </div>
+      <div id="map">
+         
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.419540413664!2d117.25651086740905!3d31.840796963188897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35cb614fb22cdac7%3A0x18c4d880b7b0c56a!2z5Lit5Zu95a6J5b6955yB5ZCI6IKl5biC6JyA5bGx5Yy65Lit5Zu956eR5a2m5oqA5pyv5aSn5a2m6KW_5qCh5Yy677yN56eR5oqA5a6e6aqM5qW8IOmCruaUv-e8lueggTogMjMwMDM5!5e0!3m2!1szh-CN!2shk!4v1648980979164!5m2!1szh-CN!2shk"
+          width=90% height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section> -->
+    <!-- miscellaneous -->
+    <section id="miscellaneous" class="content-section">
+      <div class="section-heading">
+        <h1>Miscellaneous</em></h1>
+        <p></p>
+      </div>
+      <div class="section-content">
+        <p>A link to my GF <a href="https://cs.stanford.edu/~shirwu/" target="_blank">Shirley Wu</a>.</p>
+      </div>
+    </section>
+    <section class="footer">
+      <p>Copyright &copy; 2022 Zhanghan Wang & Yingxin Wu</p>
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('header').outerHeight();
+
+    $(window).scroll(function (event) {
+      didScroll = true;
+    });
+
+    setInterval(function () {
+      if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+      }
+    }, 250);
+
+    function hasScrolled() {
+      var st = $(this).scrollTop();
+
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+      } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+          $('header').removeClass('nav-up').addClass('nav-down');
+        }
+      }
+
+      lastScrollTop = st;
+    }
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+
+</html>
