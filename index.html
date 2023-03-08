@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Zhanghan Wang</title>
+  <title>Yi Yang</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico">   <!--#在页面上会有图标-->
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -49,12 +49,12 @@
 
   <div class="sidebar-navigation hidde-sm hidden-xs">
     <div class="logo">
-      <img src="img/photo.jpg">
+      <img src="img/photo.jpg"> <!--src定位到地址-->
     </div>
     <nav>
       <ul>
         <li>
-          <a href="#aboutme">
+          <a href="#aboutme">     <!--<a指定超链接-->
             <span class="rect"></span>
             <span class="circle"></span>
             About Me
@@ -92,27 +92,31 @@
     </ul>
   </div>
 
-
+<!--section 结构 div page-content, section-heading, section-content,tabs-content /p相当于空格 -->
   <div class="page-content">
     <section id="aboutme" class="content-section">
       <div class="section-heading">
-        <h1>Zhanghan Wang</h1>
+        <h1>Yi Yang</h1>
       </div>
       <div class="section-content">
         <p>
-          I am Zhanghan Wang, a PhD student at NYU now.
-          And I am widely interested in works about building <em>high-performance and reliable systems</em>. <br>
-          More specifically, I am now working on safety of distributed system advised by 
-          Prof. <a href="https://cs.nyu.edu/~apanda/" target="_blank">Aurojit Panda</a>.
+          My name is Yi Yang, a second-year student at the University of Science and Technology of China（USTC）, 
+          where I am pursuing a degree in Statistics and a minor in Communications. 
+          Currently, I am involved in a research project on graph neural networks, advised by 
+          Prof. <a href="https://hexiangnan.github.io/" target="_blank">Xiangnan He</a>.
+          I am passionate about bridging the gap between Statistics, machine learning, and Social Science, 
+          as I believe that these fields can work in tandem to solve complex real-world problems. 
         </p>
         <p>
-          <a href="https://github.com/RabbitWhite1"><i class="fa fa-github"></i> GitHub</a>&emsp;&emsp;&emsp;&emsp;
-          <a href="mailto:hankzhwang@gmail.com"><i class="fa fa-envelope"></i> hankzhwang AT
-            gmail.com</a>&emsp;&emsp;&emsp;&emsp;
+          <a href="https://github.com/YiYang-github"><i class="fa fa-github"></i> GitHub</a>&emsp;&emsp;&emsp;&emsp;
+          <a href="mailto:yanggnay@ustc.mail.edu.cn"><i class="fa fa-envelope"></i> yanggnay AT
+            ustc.mail.edu.cn</a>&emsp;&emsp;&emsp;&emsp;
         </p>
       </div>
     </section>
-    <!-- Research Experience -->
+
+
+    <!-- Research Experience <br> line break; <em>emphasize -->
     <section id="research" class="content-section">
       <div class="section-heading">
         <h1>Research<br><em>Experience</em></h1>
@@ -131,21 +135,25 @@
                 <ul>
                   <li>
                     <div class="item">
-                      <img src="img/research/concolic.jpg" alt="">
+                      <img src="img/research/GIFinfluence.png" alt="222" align = "middle">
                       <div class="text-content">
-                        <h4>OpenJDK-based Concolic Execution Engine</h4>
-                        <span>July 2021 - Jan 2022</span>
-                        <p>We directly modified OpenJDK source codes to make this concolic execution engine applicable
-                          to all valid Java programs.</p>
+                        <h4>GIF: A General Graph Unlearning Strategy via 
+                          Influence Function</h4>
+                        <span style="color:brown">WWW 2023 Co-first author(Full, Accept Rate: 19.2%) </span>
+                        <h5>Jiancan Wu, Yi Yang , Yuchun Qian, Yongduo Sui, Xiang Wang & Xiangnan He </h5>
+                        <p>We propose a more general and powerful graph unlearning
+                          algorithm GIF tailor-made for GNN models, which allows us to
+                          estimate the model prediction in advance efficiently and protect
+                          privacy.</p>
                         <div class="accent-button button">
-                          <a target="_blank">Stay Tuned</a>
+                          <a target="_blank" class = "button">Paper</a> <!-- only need to add href -->
+                          <a target="_blank" class = "button">Code</a>
                         </div>
-                      </div>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div id="tab_project">
+              <!-- <div id="tab_project">
                 <ul>
                   <li>
                     <div class="item">
@@ -179,7 +187,7 @@
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </section>
           </div>
         </div>
@@ -195,48 +203,19 @@
         <div class="owl-carousel owl-theme">
           <div class="item">
             <div class="image">
-              <img src="img/badge/nyu.png" alt="">
-            </div>
-            <div class="text-content">
-              <h4>New York University</h4>
-              <span>2022.09 - Present</span>
-              <p>
-                I am now an first-year PhD student at NYU, researching on safety of distributed systems, advised by 
-                Prof. <a href="https://cs.nyu.edu/~apanda/" target="_blank">Aurojit Panda</a>.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
               <img src="img/badge/ustc.png" alt="">
+              
               <!-- <div class="education-button button">
                 <a href="#projects">Continue Reading</a>
               </div> -->
             </div>
             <div class="text-content">
               <h4>University of Science and Technology of China</h4>
-              <span>2018.09 - 2022.06</span>
+              <span>2021.09 - present</span>
               <p>
-                USTC is where I started my Computer Science Study Science in June 2022. 
-                And I met 
-                Prof. <a href="http://staff.ustc.edu.cn/~chengli7/" target="_blank">Cheng Li</a> 
-                here, who offers me lots of help in digging into system works.
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="image">
-              <img src="img/badge/sjtu.png" alt="">
-              <div class="education-button button">
-                <!-- <a href="#projects">Continue Reading</a> -->
-              </div>
-            </div>
-            <div class="text-content">
-              <h4>Shanghai Jiao Tong University</h4>
-              <span>2021.07-2022.01</span>
-              <p>
-                I went to SJTU for research about concolic execution, advised by 
-                Prof. <a href="https://ipads.se.sjtu.edu.cn/pub/members/zhaoguo_wang" target="_blank">Zhaoguo Wang</a>
+                I was accepted into <a href="https://sgy.ustc.edu.cn/" target="_blank">the School of the Gifted Young</a> 
+                during my second year of high school, 
+                and I am deeply grateful to <a href="https://en.ustc.edu.cn/" target="_blank">USTC</a> for providing me with an early opportunity to experience higher education. 
               </p>
             </div>
           </div>
@@ -268,11 +247,15 @@
         <p></p>
       </div>
       <div class="section-content">
-        <p>A link to my GF <a href="https://cs.stanford.edu/~shirwu/" target="_blank">Shirley Wu</a>.</p>
+        <p>  have a passion for handwriting and <a href="https://en.wikipedia.org/wiki/Chinese_calligraphy" target="_blank">Chinese calligraphy</a>,and enjoy practicing
+          <a href="https://en.wikipedia.org/wiki/Regular_script" target="_blank">regular script</a>,
+          <a href="https://en.wikipedia.org/wiki/Seal_script" target="_blank">seal script</a> and
+          <a href="https://en.wikipedia.org/wiki/Official_script" target="_blank">official script.</a>.
+          In addition to calligraphy, I also have a fondness for pets and poetry.
       </div>
     </section>
     <section class="footer">
-      <p>Copyright &copy; 2022 Zhanghan Wang & Yingxin Wu</p>
+      <p>Copyright &copy; 2023 Yi Yang</p>
     </section>
   </div>
 
