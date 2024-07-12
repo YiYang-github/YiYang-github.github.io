@@ -29,3 +29,14 @@ jobs:
         context: .
         push: true
         tags: amirpourmand/al-folio
+    
+    - name: Deploy website 
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global --add safe.directory /github/workspace
+        yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }} --src ${{ steps.setup.outputs.SRC_BRANCH }} --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
+        git push -f -q https://${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/YiYang-github/YiYang-github.github.io.git gh-pages
+
