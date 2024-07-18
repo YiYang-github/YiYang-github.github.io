@@ -5,6 +5,7 @@
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
+$custom-green: #6B8E23;  // 你喜欢的绿色
 
 @import
   "variables",
@@ -13,3 +14,74 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+$custom-green: #6B8E23;  // 你喜欢的绿色
+
+a {
+  color: $custom-green;
+  text-decoration: none;  // 如果你不希望链接有下划线，可以保留这行
+
+  &:hover {
+    text-decoration: underline;  // 悬停时显示下划线
+  }
+}
+
+p a, li a {
+  color: $custom-green;
+}
+
+
+.research-highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.highlight-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.highlight-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.highlight-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.highlight-column {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.highlight-column h3 {
+  margin-top: 10px;
+}
+
+.highlight-column p {
+  color: #666;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
