@@ -19,31 +19,31 @@
   contents:
     - title: Research Intern
       institution: University of Pennsylvania, Pennsylvania, United States
-      year: Jul 2024 - now
+      year: Jul. 2024 - Sep. 2024
       description:
       - Language Evolutions, Bayesian Phylogenetics 
       - Supervised by <a href="https://www.ling.upenn.edu/~myl/" target="_blank">Distinguished Prof. Mark Liberman</a>
 
     - title: Research Intern
-      institution: Interdisciplinary Research Center for Linguistic Sciences
-      year: Jan 2024 - now
+      institution: University of Science and Technology of China, Anhui, China 
+      year: Oct. 2023 - Oct. 2024
       description:
-        - Lexical Tone, Endangered Languages, Language Acquistion
+        - Language Acquistion, Wav2vec2.0, Speech Recognition, Lexical Tone
         - Supervised by <a href="https://scholar.google.com/citations?user=jbbXJOkAAAAJ&hl=en" target="_blank">Prof. Jiahong Yuan</a>
 
     - title: Research Intern 
       institution: University of Illinois Urbana-Champaign, United States
-      year: Jun 2023 - Jul 2024
+      year: May. 2023 - Oct. 2023
       description:
-        - Large Language Models Unlearning, Databases, Benchmark, GNNs
+        - Relational Database, Machine Learning, Benchmark, GNNs
         - Supervised by <a href="https://cs.stanford.edu/~jiaxuan/" target="_blank">Assistant Professor. Jiaxuan You</a>
         -  Jiaxuan is incredibly smart and patient, teaching me how to do impactful work and develop packages step-by-step, for which I am truly grateful.
     
     - title: Research Intern
       institution: University of Science and Technology of China, Anhui, China
-      year: May 2022 -  May 2023
+      year: May. 2022 -  May. 2023
       description:
-        - Machine Unlearning, Graph Neural Networks, Explainability
+        - Responsible AI, Machine Unlearning, Interpretability, Graph Neural Networks
         - Supervised by <a href="https://hexiangnan.github.io/" target="_blank">Prof. Xiangnan He</a> and <a href="https://xiangwang1223.github.io/" target="_blank">Prof. Xiang Wang</a>
         - <a href="http://data-science.ustc.edu.cn/main.htm" target="_blank">Lab for Data Science</a> is where I began my research jounery. I am lucky to complete in a project on graph unlearning with <a href="https://wujcan.github.io/" target="_blank">Dr. Jiancan Wu</a>.
 
@@ -66,4 +66,4 @@
 - title: Professional Services
   type: list
   contents:    
-    - <strong>Conference Reviewer:</strong>  <a href="https://agiworkshop.github.io/" target="_blank"> ICLR 2024 AGI Workshop </a>
+    - <strong>Conference Reviewer:</strong>  ICLR 2025, COLING 2025, <a href="https://agiworkshop.github.io/" target="_blank"> ICLR 2024 AGI Workshop </a>
