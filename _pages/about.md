@@ -50,7 +50,7 @@ The past three years at USTC have been quite an interesting and unconventional l
 
 [Chinese calligraphy](https://en.wikipedia.org/wiki/Chinese_calligraphy), the supreme and representative art of Chinese culture, has accompanied me since childhood, helping me to calm down and focus. More interestingly, I was fortunate to further learn how to make a Chinese Calligraphy Brush from scratch on an elective course when I got to university. Reading, movies, and music always bring me joy amidst the trivialities of daily life.
  
-If you are interested in any of these, I am happy to introduce(安利) them to you in detail!
+If you are interested in any of these, I am happy to introduce them to you in detail!
 
 
 
