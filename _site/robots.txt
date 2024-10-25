@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://yiyang-github.github.io//sitemap.xml
