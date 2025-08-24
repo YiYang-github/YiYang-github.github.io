@@ -126,9 +126,6 @@
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
-              </li>
-              <li class="nav-item ">
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
 
@@ -425,7 +422,7 @@ numerical ODE solver such that the optimization trajectory is closer to the inva
 \theta_{t+1} &amp;= \underbrace{\theta_{t} + h \gamma_t}_{\text{naive natural gradient update}} \underbrace{- \frac{1}{2}h^2 \Gamma_{\theta_t}(\gamma_t,\gamma_t)}_{\text{geodesic correction}}.
 \end{aligned}\]
 
-<p>Here \(\Gamma_{\theta_t}(\cdot, \cdot)\) represents the result of applying the <a href="https://en.wikipedia.org/wiki/Levi-Civita_connection" target="_blank" rel="noopener noreferrer">Levi-Civita connection</a><sup id="fnref:connection" role="doc-noteref"><a href="#fn:connection" class="footnote" rel="footnote">1</a></sup> to input vectors. We name this update rule <em>natural gradient update with geodesic correction</em>.</p>
+<p>Here \(\Gamma_{\theta_t}(\cdot, \cdot)\) represents the result of applying the <a href="https://en.wikipedia.org/wiki/Levi-Civita_connection" target="_blank" rel="noopener noreferrer">Levi-Civita connection</a><sup id="fnref:connection"><a href="#fn:connection" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> to input vectors. We name this update rule <em>natural gradient update with geodesic correction</em>.</p>
 
 <p>An interesting observation is that if we use the naive natural gradient update rule, it amounts to using the Riemannian Euler method with <strong>first-order</strong> approximation to \(\operatorname{Exp}(\cdot, \cdot)\). This observation confirms that geodesic correction can provide more invariance (asymptotically).</p>
 
@@ -462,7 +459,7 @@ numerical ODE solver such that the optimization trajectory is closer to the inva
 
 <h4 id="fitting-deep-auto-encoders-and-deep-classifiers">Fitting deep auto-encoders and deep classifiers</h4>
 
-<p>We then show the results of training deep autoencoders and classifiers on the MNIST dataset<sup id="fnref:mnist" role="doc-noteref"><a href="#fn:mnist" class="footnote" rel="footnote">2</a></sup>. The following figure illustrates how the different optimization algorithms fare against each other. The bottom x-axis corresponds to the number of iterations during training, while the top x-axis corresponds to the wall-clock time. The y-axis shows the training error. Each optimization algorithm has two curves with the same color: one is solid while the other is dashed. We can observe that improved natural gradient updates converge faster in terms of number of iterations, and the faster geodesic correction also achieves lower loss in shorter wall-clock time, compared to the naive update.</p>
+<p>We then show the results of training deep autoencoders and classifiers on the MNIST dataset<sup id="fnref:mnist"><a href="#fn:mnist" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. The following figure illustrates how the different optimization algorithms fare against each other. The bottom x-axis corresponds to the number of iterations during training, while the top x-axis corresponds to the wall-clock time. The y-axis shows the training error. Each optimization algorithm has two curves with the same color: one is solid while the other is dashed. We can observe that improved natural gradient updates converge faster in terms of number of iterations, and the faster geodesic correction also achieves lower loss in shorter wall-clock time, compared to the naive update.</p>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -472,7 +469,7 @@ numerical ODE solver such that the optimization trajectory is closer to the inva
 <p><br></p>
 
 <h4 id="model-free-reinforcement-learning-for-continuous-control">Model-free reinforcement learning for continuous control</h4>
-<p>Finally, we show that our techniques also improve the performance of natural gradient-based optimization algorithms in reinforcement learning. In the experiments, we apply our techniques to ACKTR <d-cite key="wu2017scalable"></d-cite>, a natural gradient algorithm for policy optimization in reforcement learning. The results on the <a href="https://gym.openai.com/envs/HalfCheetah-v2/" target="_blank" rel="noopener noreferrer">HalfCheetah</a><sup id="fnref:rl" role="doc-noteref"><a href="#fn:rl" class="footnote" rel="footnote">3</a></sup> environment are shown in the following figure, where we obtain higher rewards faster after combining our techniques with ACKTR.</p>
+<p>Finally, we show that our techniques also improve the performance of natural gradient-based optimization algorithms in reinforcement learning. In the experiments, we apply our techniques to ACKTR <d-cite key="wu2017scalable"></d-cite>, a natural gradient algorithm for policy optimization in reforcement learning. The results on the <a href="https://gym.openai.com/envs/HalfCheetah-v2/" target="_blank" rel="noopener noreferrer">HalfCheetah</a><sup id="fnref:rl"><a href="#fn:rl" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> environment are shown in the following figure, where we obtain higher rewards faster after combining our techniques with ACKTR.</p>
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -486,13 +483,13 @@ numerical ODE solver such that the optimization trajectory is closer to the inva
 <h4 id="footnotes">Footnotes</h4>
 <div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:connection" role="doc-endnote">
+    <li id="fn:connection">
       <p>This is again a Riemannian geometry concept. The reader only needs to know that in practice \(\Gamma_{\theta_t}(\cdot, \cdot)\) can be computed almost as fast as \(\widetilde{\nabla}_{\theta_t} L(p_{\theta_t}(x,y))\). Please refer to the paper for more information. <a href="#fnref:connection" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:mnist" role="doc-endnote">
+    <li id="fn:mnist">
       <p>We also have results on 2 other datasets in the paper. <a href="#fnref:mnist" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
-    <li id="fn:rl" role="doc-endnote">
+    <li id="fn:rl">
       <p>We tested 5 other environments in the paper. <a href="#fnref:rl" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
   </ol>
@@ -511,7 +508,7 @@ numerical ODE solver such that the optimization trajectory is closer to the inva
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2024 Yi  Yang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme.
+        © Copyright 2025 Yi  Yang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme.
 
       </div>
     </footer>
